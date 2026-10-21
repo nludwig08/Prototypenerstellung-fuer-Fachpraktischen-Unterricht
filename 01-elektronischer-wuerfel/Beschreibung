@@ -1,1 +1,15 @@
+# Elektronischer Würfel
 
+## Beschreibung
+
+Beim elektronischen Würfel werden sieben LEDs in der Anordnung eines klassischen Würfels auf der Platine platziert. Dadurch können die gewürfelten Zahlen von eins bis sechs durch unterschiedliche LED-Kombinationen dargestellt werden. Jede LED ist über einen Vorwiderstand mit einem I/O-Pin des ATtiny824 verbunden und kann dadurch einzeln vom Mikrocontroller angesteuert werden.
+
+## Funktionsweise
+
+Als Auslöser für den Würfelvorgang dient ein **SW-520D-Kippschalter** mit einer integrierten Kugel. Wird der Würfel geschüttelt, verändert die Kugel im Inneren des Schalters ihre Position und sendet dadurch ein Signal, welches vom Mikrocontroller erkannt wird. Nach dem Schütteln wird eine zufällige Zahl zwischen eins und sechs bestimmt und durch die entsprechende Kombination der sieben LEDs dargestellt.
+
+## Verwendete Hauptbauteile
+
+- Mikrocontroller: ATtiny824
+- 7 × LED mit Vorwiderstand
+- Kippschalter SW-520D
