@@ -1,1 +1,23 @@
+# Wecker
 
+## Beschreibung
+
+Beim Wecker übernimmt ein ESP32-C6 die zentrale Steuerung der Schaltung. Die aktuelle Uhrzeit sowie die eingestellte Weckzeit werden über vier 7-Segment-Anzeigen dargestellt. Die Ansteuerung der Anzeigen erfolgt über die gemeinsamen Segmentleitungen und vier Transistoren, welche jeweils eine der vier Stellen aktivieren. Dadurch können alle Anzeigen mit einer begrenzten Anzahl an I/O-Pins betrieben werden.
+
+## Bedienung
+
+Zur Bedienung des Weckers stehen drei Taster zur Verfügung. Diese sind jeweils über einen Pull-up-Widerstand mit einem Eingang des Mikrocontrollers verbunden und ermöglichen das Einstellen sowie Bedienen des Weckers. Zusätzlich ist ein Buzzer vorhanden, der über einen Transistor vom ESP32-C6 angesteuert wird und beim Erreichen der eingestellten Weckzeit ein akustisches Signal ausgibt.
+
+## Zeitmessung und Stromversorgung
+
+Für die Zeitmessung wird zusätzlich eine Quarzschaltung vorgesehen. Der Quarz dient als präzise Zeitreferenz für den Mikrocontroller und ermöglicht eine möglichst genaue Erfassung der Uhrzeit. Die Stromversorgung erfolgt über eine USB-C-Schnittstelle und wird auf der Platine auf die benötigten Spannungen aufbereitet.
+
+## Verwendete Hauptbauteile
+
+- Mikrocontroller: ESP32-C6
+- 4 × 7-Segment-Anzeige
+- 4 × Transistor (Umschaltung der Stellen)
+- 3 × Taster mit Pull-up-Widerstand
+- Buzzer mit Transistor
+- Quarz
+- USB-C-Buchse mit Spannungsaufbereitung
