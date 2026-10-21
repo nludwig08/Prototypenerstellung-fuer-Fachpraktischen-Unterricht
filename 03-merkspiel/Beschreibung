@@ -1,1 +1,13 @@
+# Merkspiel
 
+## Beschreibung
+
+Beim Merkspiel wird die bereits für „Hau den Lucas" entwickelte Hardware verwendet. Die vier Taster mit den darunterliegenden LEDs sowie der Buzzer bleiben dabei unverändert. Die LEDs zeigen eine zufällige Reihenfolge an, die sich der Spieler merken und anschließend durch Betätigen der entsprechenden Taster wiederholen muss.
+
+## Unterschied zu „Hau den Lucas"
+
+Die Unterschiede zum Spiel „Hau den Lucas" liegen ausschließlich in der Software. Der ATtiny824 steuert die LEDs in einer vorgegebenen Reihenfolge an und wertet anschließend die Eingaben des Spielers aus. Bei einer falschen Eingabe wird über die LEDs und den Buzzer ein Fehlersignal ausgegeben.
+
+## Hardware
+
+Die Hardware (Schaltplan, Leiterplatte und Gehäuse) ist identisch mit dem Projekt [Hau den Lucas](../02-hau-den-lukas/). Die entsprechenden Dateien findest du dort.
