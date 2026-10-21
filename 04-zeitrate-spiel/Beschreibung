@@ -1,1 +1,16 @@
+# Zeitrate-Spiel
 
+## Beschreibung
+
+Beim Zeitrate-Spiel wird eine zweistellige 7-Segment-Anzeige verwendet, um die vergangene Zeit darzustellen. Die beiden Anzeigen werden über den ATtiny824 angesteuert. Da die Segmente beider Anzeigen miteinander verbunden sind, werden die Anzeigen über zwei Transistoren abwechselnd aktiviert. Dadurch können mit wenigen I/O-Pins beide Stellen der Anzeige angesteuert werden.
+
+## Bedienung und Funktionsweise
+
+Als Eingabeelement dient ein Taster, der über einen Pull-up-Widerstand mit einem I/O-Pin des ATtiny824 verbunden ist. Durch Betätigen des Tasters wird das Spiel gestartet bzw. die Zeitmessung ausgelöst. Der Mikrocontroller übernimmt dabei die Ansteuerung der 7-Segment-Anzeige sowie die Messung der verstrichenen Zeit.
+
+## Verwendete Hauptbauteile
+
+- Mikrocontroller: ATtiny824
+- Zweistellige 7-Segment-Anzeige
+- 2 × Transistor (Umschaltung der Stellen)
+- 1 × Taster mit Pull-up-Widerstand
