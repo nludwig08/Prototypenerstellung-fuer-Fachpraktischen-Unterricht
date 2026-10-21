@@ -1,1 +1,17 @@
+# Hau den Lucas
+
+## Beschreibung
+
+Bei „Hau den Lucas“ werden vier Taster mit jeweils einer darunterliegenden LED verwendet. Die LEDs sind direkt unter den Tastern positioniert, sodass das Licht durch den jeweiligen Taster hindurchscheint. Jeder Taster ist mit einem I/O-Pin des ATtiny824 verbunden und ermöglicht dadurch die Erfassung der jeweiligen Betätigung. Die LEDs werden ebenfalls über I/O-Pins des Mikrocontrollers angesteuert und zeigen an, welcher Taster als Nächstes betätigt werden soll.
+
+## Akustik und Spielablauf
+
+Zur akustischen Begleitung ist ein Buzzer auf der Platine vorgesehen, welcher ebenfalls über einen I/O-Pin des ATtiny824 angesteuert wird. Während des Spiels werden abhängig vom Spielverlauf unterschiedliche Signale ausgegeben. Die Geschwindigkeit, mit der die LEDs wechseln, wird dabei vom Mikrocontroller gesteuert und im Verlauf des Spiels erhöht. Wird ein falscher Taster betätigt oder nicht rechtzeitig reagiert, werden alle LEDs gleichzeitig angesteuert und über den Buzzer ein Fehlersignal ausgegeben.
+
+## Verwendete Hauptbauteile
+
+- Mikrocontroller: ATtiny824
+- 4 × Taster (lichtdurchlässig)
+- 4 × LED mit Vorwiderstand
+- Buzzer
 
